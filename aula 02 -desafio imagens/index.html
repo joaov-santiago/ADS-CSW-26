@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Imagens</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Desafio das Imagens</h1>
+    <hr>
+    <h2>Cidade de Vila Velha</h2>
+    <img src="vv-es.jpg" width="420" alt="cidade de vila velha">
+    <hr>
+    <picture>
+        <img src="vila-velha.jpg" width="420" alt="cidade de vila velha">
+        <figcaption>Cidade de Vila Velha, vista do convento para praia da costa.</figcaption>
+    </picture>
+    <hr>
+    <picture>
+        <source media="(min-width: 768px)" srcset="convento.jpg" width="540">
+        <source media="(max-width: 760px)" srcset="convento.jpg" width="420">
+        <img src="convento.jpg" alt="Convento da Penha">
+    </picture>
+</body>
+</html>
