@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário em Tabela</title>
+</head>
+<body>
+
+<h2>Formulário</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+<table border="1" cellpadding="8" cellspacing="0">
+
+    <tr>
+        <th colspan="2">Dados Pessoais</th>
+    </tr>
+
+    <tr>
+        <td>Nome completo:</td>
+        <td><input type="text" name="nome" required></td>
+    </tr>
+
+    <tr>
+        <td>E-mail:</td>
+        <td><input type="email" name="email" required></td>
+    </tr>
+
+    <tr>
+        <td>Senha:</td>
+        <td><input type="password" name="senha" required></td>
+    </tr>
+
+    <tr>
+        <td>Data de nascimento:</td>
+        <td><input type="date" name="nascimento"></td>
+    </tr>
+
+    <tr>
+        <td>Idade:</td>
+        <td><input type="number" name="idade" min="0" max="120"></td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Preferências</th>
+    </tr>
+
+    <tr>
+        <td>Gênero:</td>
+        <td>
+            <input type="radio" name="genero" value="masc"> Masculino
+            <input type="radio" name="genero" value="fem"> Feminino
+            <input type="radio" name="genero" value="outro"> Outro
+        </td>
+    </tr>
+
+    <tr>
+        <td>Interesses:</td>
+        <td>
+            <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia<br>
+            <input type="checkbox" name="interesses" value="esportes"> Esportes<br>
+            <input type="checkbox" name="interesses" value="musica"> Música<br>
+            <input type="checkbox" name="interesses" value="games"> Games
+        </td>
+    </tr>
+
+    <tr>
+        <td>Estado:</td>
+        <td>
+            <select name="estado">
+                <option value="es">Espírito Santo</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Upload de arquivo:</td>
+        <td><input type="file" name="arquivo"></td>
+    </tr>
+
+    <tr>
+        <td>Cor favorita:</td>
+        <td><input type="color" name="cor"></td>
+    </tr>
+
+    <tr>
+        <td>Nível de satisfação:</td>
+        <td><input type="range" name="satisfacao" min="0" max="10"></td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Mensagem</th>
+    </tr>
+
+    <tr>
+        <td>Observações:</td>
+        <td><textarea name="mensagem" rows="5" cols="30"></textarea></td>
+    </tr>
+
+    <tr>
+        <td>Concorda com os termos?</td>
+        <td><input type="checkbox" name="termos" required> Concordo
+            <input type="checkbox" name="termos" required> Não concordo</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
