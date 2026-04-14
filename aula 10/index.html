@@ -6,117 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
 
-<h2>Formulário</h2>
+<h2>Formulario</h2>
 
 <form action="#" method="post" enctype="multipart/form-data">
-
-<table border="1" cellpadding="8" cellspacing="0">
+<table border="1" cellpadding="6" cellspacing="0">
 
     <tr>
-        <th colspan="2">Dados Pessoais</th>
+        <td>Nome:</td>
+        <td><input type="text" placeholder="Digite seu nome"></td>
     </tr>
 
     <tr>
-        <td>Nome completo:</td>
-        <td><input type="text" name="nome" required></td>
+        <td>E-mail pessoal:</td>
+        <td><input type="email"></td>
     </tr>
 
     <tr>
-        <td>E-mail:</td>
-        <td><input type="email" name="email" required></td>
+        <td>E-mail (pattern):</td>
+        <td><input type="email" placeholder="Digite seu email com @"></td>
     </tr>
 
     <tr>
         <td>Senha:</td>
-        <td><input type="password" name="senha" required></td>
-    </tr>
-
-    <tr>
-        <td>Data de nascimento:</td>
-        <td><input type="date" name="nascimento"></td>
+        <td><input type="password"></td>
     </tr>
 
     <tr>
         <td>Idade:</td>
-        <td><input type="number" name="idade" min="0" max="120"></td>
+        <td><input type="number" style="width:60px;"></td>
     </tr>
 
     <tr>
-        <th colspan="2">Preferências</th>
-    </tr>
-
-    <tr>
-        <td>Gênero:</td>
-        <td>
-            <input type="radio" name="genero" value="masc"> Masculino
-            <input type="radio" name="genero" value="fem"> Feminino
-            <input type="radio" name="genero" value="outro"> Outro
+        <td colspan="2">
+            Deixe um comentário:<br><br>
+            <textarea rows="6" cols="60"></textarea>
         </td>
     </tr>
 
     <tr>
-        <td>Interesses:</td>
         <td>
-            <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia<br>
-            <input type="checkbox" name="interesses" value="esportes"> Esportes<br>
-            <input type="checkbox" name="interesses" value="musica"> Música<br>
-            <input type="checkbox" name="interesses" value="games"> Games
+            Materia de interesse:<br>
+            <input type="checkbox"> Backend<br>
+            <input type="checkbox"> FrontEnd<br>
+            <input type="checkbox"> FullStack
+        </td>
+
+        <td>
+            Tipo de Viagem:<br>
+            <input type="radio" name="viagem"> Negócios<br>
+            <input type="radio" name="viagem"> Lazer<br>
+            <input type="radio" name="viagem"> Turismo<br>
+            <input type="radio" name="viagem"> Acadêmico
         </td>
     </tr>
 
     <tr>
-        <td>Estado:</td>
         <td>
-            <select name="estado">
-                <option value="es">Espírito Santo</option>
-                <option value="sp">São Paulo</option>
-                <option value="rj">Rio de Janeiro</option>
-                <option value="mg">Minas Gerais</option>
+            Esporte favorito:<br>
+            <select size="4">
+                <option>Futebol</option>
+                <option>Basquete</option>
+                <option>Vôlei</option>
+                <option>Tênis</option>
+            </select>
+        </td>
+
+        <td>
+            Investimentos:<br>
+            <select>
+                <option>Poupança</option>
+                <option>Criptomoedas</option>
+                <option>Ações</option>
+                <option>Fundos</option>
             </select>
         </td>
     </tr>
 
     <tr>
-        <td>Upload de arquivo:</td>
-        <td><input type="file" name="arquivo"></td>
+        <td>
+            Escolha uma cor:<br>
+            <input type="color">
+        </td>
+
+        <td>
+            Selecione um arquivo:<br>
+            <input type="file">
+        </td>
     </tr>
 
     <tr>
-        <td>Cor favorita:</td>
-        <td><input type="color" name="cor"></td>
+        <td colspan="2">
+            Data e Hora envio:
+            <input type="datetime-local">
+        </td>
     </tr>
 
     <tr>
-        <td>Nível de satisfação:</td>
-        <td><input type="range" name="satisfacao" min="0" max="10"></td>
-    </tr>
-
-    <tr>
-        <th colspan="2">Mensagem</th>
-    </tr>
-
-    <tr>
-        <td>Observações:</td>
-        <td><textarea name="mensagem" rows="5" cols="30"></textarea></td>
-    </tr>
-
-    <tr>
-        <td>Concorda com os termos?</td>
-        <td><input type="checkbox" name="termos" required> Concordo
-            <input type="checkbox" name="termos" required> Não concordo</td>
-    </tr>
-
-    <tr>
-        <td colspan="2" style="text-align:center;">
+        <td colspan="2" style="text-align:left;">
             <button type="submit">Enviar</button>
             <button type="reset">Limpar</button>
         </td>
     </tr>
 
 </table>
-
 </form>
 
 </body>
