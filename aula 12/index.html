@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo de Pseudo-Seletores</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    /* Divs separadas */
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .box {
+        width: 40%;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+    }
+
+    /* Links */
+    a {
+        display: block;
+        margin: 10px 0;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    /* Mudar cor ao passar o mouse */
+    a:hover {
+        color: blue;
+    }
+
+    /* Mudar cor ao clicar */
+    a:active {
+        color: red;
+    }
+
+    /* Antes do link */
+    a::before {
+        content: "▶ ";
+        color: green;
+    }
+
+    /* Depois do link */
+    a::after {
+        content: " ♬";
+        color: purple;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Links de Música</h1>
+
+<div class="container">
+    
+    <div class="box">
+        <h2>Streaming</h2>
+        <a href="https://www.spotify.com" target="_blank">Spotify</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://music.amazon.com" target="_blank">Amazon Music</a>
+    </div>
+
+    <div class="box">
+        <h2>Informações</h2>
+        <p>Passe o mouse sobre os links para ver a mudança de cor.</p>
+        <p>Clique nos links para ver outro efeito.</p>
+        <p>Observe os símbolos antes e depois dos links.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
